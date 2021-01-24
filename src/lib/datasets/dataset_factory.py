@@ -8,12 +8,14 @@ from .sample.ctdet import CTDetDataset
 from .sample.multi_pose import MultiPoseDataset
 
 from .dataset.coco import COCO
+from .dataset.fashion import Fashion
 from .dataset.pascal import PascalVOC
 from .dataset.kitti import KITTI
 from .dataset.coco_hp import COCOHP
 
 
 dataset_factory = {
+  'fashion': Fashion,
   'coco': COCO,
   'pascal': PascalVOC,
   'kitti': KITTI,
