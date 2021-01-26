@@ -24,11 +24,11 @@ class Fashion(data.Dataset):
     self.img_dir = os.path.join(self.data_dir, 'images', '{}'.format(split))
     self.annot_path = os.path.join(self.data_dir, 'annotations', '{}.json').format(split)
     self.max_objs = 128
-    self.class_name = ['short_sleeved_shirt', 'long_sleeved_shirt', 'short_sleeved_outwear', 'long_sleeved_outwear',
+    self.class_name = ['background', 'short_sleeved_shirt', 'long_sleeved_shirt', 'short_sleeved_outwear', 'long_sleeved_outwear',
             'vest', 'sling', 'shorts', 'trousers', 'skirt', 'short_sleeved_dress',
             'long_sleeved_dress', 'vest_dress', 'sling_dress']
     self._valid_ids = [
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
       14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 
       24, 25, 27, 28, 31, 32, 33, 34, 35, 36, 
       37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 
